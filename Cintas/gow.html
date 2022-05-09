@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>ViGames</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <img src="../img/logos/logo.png" alt="" width="200px">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../cartelera.html">Cartelera</a>
+            <a href="../contacto.html">Contactanos</a>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Principal -->
+        <div class="pelicula-principal" style="background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(../img/goww.webp); background-size: cover; background-position: center center;">
+            <div class="contenedor">
+                <img class="img" src="../img/logos/gow.png" alt="" height="150" width="600">
+                <p class="descripcion">Kratos ha dejado atrás su venganza contra los dioses del Olimpo y vive ahora como un hombre en los dominios de los dioses y monstruos nórdicos. En este mundo cruel e implacable debe luchar para sobrevivir… y enseñar a su hijo a hacerlo también.</p>
+                <button id="open-modal1" role="button" class="boton" id="repro"><i class="fa-solid fa-play"></i>Reproducir</button>
+                <button id="open-modal2" role="button" class="boton"><i class="fa-solid fa-circle-play"></i>Trailer</button>
+            </div>
+        </div>
+        <dialog class="modal" id="modal1">
+            <iframe width="1080" height="660" src="https://www.youtube.com/embed/mlqQJ9_x5IA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button id="close-modal1" role="button" class="modal-button"><i class="fa-solid fa-circle-xmark"></i></button>
+        </dialog>
+        <dialog class="modal" id="modal2">
+            <iframe width="1080" height="660" src="https://www.youtube.com/embed/dK42JGgkoF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button id="close-modal2" role="button" class="modal-button"><i class="fa-solid fa-circle-xmark"></i></button>
+        </dialog>
+
+    <!--- Seleccion -->
+
+    <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+            <h3>Más contenido</h3>
+            <div class="indicadores">
+            </div>
+        </div>
+
+        <div class="contenedor-principal">
+            <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
+
+            <div class="contenedor-carousel">
+                <div class="carousel">
+                    <div class="pelicula">
+                        <a href="tlou.html"><img src="../img/mini/tlou.jpg" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="tlou2.html"><img src="../img/mini/tlou2.jpg" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="rdr2.html"><img src="../img/mini/rdr2.jpg" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="gow.html"><img src="../img/mini/gow.jpg" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="uncharted4.html"><img src="../img/mini/u4.jpg" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="acvalhalla.html"><img src="../img/mini/acv.jpg" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="spiderman.html"><img src="../img/mini/spider.jpg" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="infamous_ss.html"><img src="../img/mini/infamous_ss.jpg" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="acorigins.html"><img src="../img/mini/aco.webp" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="watch_dogs.html"><img src="../img/mini/wd.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <section>
+            <a href="#">Volver arriba</a>
+            <a href="">Contáctanos</a>
+        </section>
+        <p>Copyright 2022</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2ec513d710.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/modal.js"></script>
+</body>
+</html>
